@@ -12,16 +12,6 @@ function boardInformation(boardId, callback) {
 
             if (error) {
 
-                if(callback === undefined) {
-
-                    console.error(error);
-
-                }else{
-
-                    callback(error);
-
-                }
-
                 callback(error);
 
             } else {
@@ -34,16 +24,7 @@ function boardInformation(boardId, callback) {
 
                 });
 
-                if(callback === undefined) {
-
-                    console.log('Information returned successfully');
-                    console.log(boardInformation);
-
-                }else{
-
-                    callback(null, boardInformation);
-                    
-                }
+                callback(null, boardInformation);
 
             }
 
