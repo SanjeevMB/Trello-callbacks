@@ -16,7 +16,7 @@ function boardInformation(boardId, callback) {
 
             } else {
 
-                let information = JSON.parse(data.toString())
+                let information = JSON.parse(data.toString());
 
                 let boardInformation = information.filter((element, index, array) => {
 
