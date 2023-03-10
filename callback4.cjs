@@ -17,39 +17,45 @@ function usingPreviouslyWrittenFunction(thanosId, thonasBoard, mindList) {
     setTimeout(() => {
 
         boardInformation(thanosId, (error, data) => {
+
             if (error) {
 
                 console.error(error);
 
             } else {
 
-                console.log('Information returned successfully')
+                console.log('Information returned successfully');
                 console.log(data);
             }
+
         });
 
         allListBelongToBoardId(thonasBoard, (error, data) => {
+
             if (error) {
 
                 console.error(error);
 
             } else {
 
-                console.log('Information returned successfully')
+                console.log('Information returned successfully');
                 console.log(data);
             }
+
         });
 
         allCardsBelongsToListId(mindList, (error, data) => {
+
             if (error) {
 
                 console.error(error);
 
             } else {
 
-                console.log('Card of listId return successfully')
+                console.log('Card of listId return successfully');
                 console.log(data);
             }
+
         });
 
     }, 2 * 1000);
@@ -57,5 +63,3 @@ function usingPreviouslyWrittenFunction(thanosId, thonasBoard, mindList) {
 }
 
 module.exports = usingPreviouslyWrittenFunction;
-
-    // usingPreviouslyWrittenFunction("mcu453ed", "mcu453ed", "qwsa221");
