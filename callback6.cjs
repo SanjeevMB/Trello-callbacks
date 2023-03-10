@@ -25,7 +25,9 @@ function usingPreviouslyWrittenFunction(thanosId, thonasBoard) {
 
                 console.log('Information returned successfully');
                 console.log(data);
+
             }
+            
         });
         allListBelongToBoardId(thonasBoard, (error, data) => {
             if (error) {

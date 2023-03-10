@@ -17,6 +17,7 @@ function usingPreviouslyWrittenFunction(thanosId, thonasBoard, mindList, spaceLi
     setTimeout(() => {
 
         boardInformation(thanosId, (error, data) => {
+
             if (error) {
 
                 console.error(error);
@@ -25,9 +26,13 @@ function usingPreviouslyWrittenFunction(thanosId, thonasBoard, mindList, spaceLi
 
                 console.log('Information returned successfully');
                 console.log(data);
+
             }
+
         });
+
         allListBelongToBoardId(thonasBoard, (error, data) => {
+
             if (error) {
 
                 console.error(error);
@@ -36,9 +41,13 @@ function usingPreviouslyWrittenFunction(thanosId, thonasBoard, mindList, spaceLi
 
                 console.log('Information returned successfully');
                 console.log(data);
+
             }
+
         });
+
         allCardsBelongsToListId(mindList, (error, data) => {
+
             if (error) {
 
                 console.error(error);
@@ -49,8 +58,11 @@ function usingPreviouslyWrittenFunction(thanosId, thonasBoard, mindList, spaceLi
                 console.log(data);
 
             }
+
         });
+
         allCardsBelongsToListId(spaceList, (error, data) => {
+            
             if (error) {
 
                 console.error(error);
